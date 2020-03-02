@@ -1,0 +1,10 @@
+apiVersion: skaffold/v2alpha3
+kind: Config
+metadata:
+  name: example
+deploy:
+  helm:
+    releases:
+      - name: example
+        chartPath: helm
+        namespace: example
